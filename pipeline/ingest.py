@@ -24,12 +24,31 @@ class SatelliteScene:
 
 class NASADataIngestor:
     """
-    NASA EarthData CMR (Common Metadata Repository) & Planetary Data System (PDS) Client.
-    Connects to NASA's public open APIs without requiring commercial subscription.
+    Multi-Agency Planetary & Earth Observation Ingestion Engine.
+    Integrates official data sources for the NASA Space Apps Challenge:
+      - NASA: Earthdata Search, Worldview (GIBS), PDS, LRO LOLA/Diviner
+      - CSA: RADARSAT Constellation Mission (RCM) & SAR tutorials
+      - ESA: Copernicus Data Space Ecosystem (Sentinel-1/2/3) & Open Science Catalog
+      - JAXA: G-Portal (GSMaP precipitation, snow cover, vegetation indices)
     """
 
     CMR_GRANULES_URL = "https://cmr.earthdata.nasa.gov/search/granules.json"
     GIBS_WMTS_URL = "https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/wmts.cgi"
+
+    # Partner Space Agency Portals & APIs
+    PARTNER_RESOURCES = {
+        "nasa_earthdata": "https://search.earthdata.nasa.gov/",
+        "nasa_worldview": "https://worldview.earthdata.nasa.gov/",
+        "nasa_pds": "https://pds.nasa.gov/",
+        "nasa_lro_geosciences": "https://pds-geosciences.wustl.edu/missions/lro/",
+        "nasa_lro_diviner": "https://pds-geosciences.wustl.edu/missions/lro/diviner.htm",
+        "csa_radarsat_rcm": "https://donnees-data.asc-csa.gc.ca/en/dataset/rcm",
+        "csa_radarsat_1": "https://donnees-data.asc-csa.gc.ca/en/dataset/radarsat1",
+        "csa_sar_tutorial": "https://github.com/asc-csa/Synthetic_Aperture_Radar_Tutorial",
+        "esa_copernicus": "https://dataspace.copernicus.eu/",
+        "esa_open_science": "https://opensciencedata.esa.int/",
+        "jaxa_gportal": "https://gportal.jaxa.jp/gpr/",
+    }
 
     def __init__(self, data_dir: str = "data/raw"):
         self.data_dir = data_dir

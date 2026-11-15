@@ -23,6 +23,18 @@ No single place on Earth perfectly replicates the Moon or Mars — but by combin
 
 ---
 
+## 🏛️ 2026 NASA Space Apps Challenge Alignment
+
+This project is built specifically for the **[2026 NASA Space Apps Challenge: Permanent-Moon-Base-Locations-and-Mars](https://www.spaceappschallenge.org/2026/challenges/permanent-moon-base-locations-and-mars/)**.
+
+### Space Agency Data Integration
+* **NASA (USA):** Earthdata Search, Worldview (GIBS), Planetary Data System (PDS), LRO LOLA & LRO Diviner Thermal Data
+* **CSA (Canada):** RADARSAT Constellation Mission (RCM), RADARSAT-1 Open Data, and Synthetic Aperture Radar (SAR) Algorithms
+* **ESA (Europe):** Copernicus Data Space Ecosystem (Sentinel-1/2) & ESA Open Science Catalog
+* **JAXA (Japan):** JAXA G-Portal (GSMaP Precipitation, Snow & Vegetation Indices)
+
+---
+
 ## 🎯 Problem Statement
 
 Space agencies (NASA, ESA, CNSA, ISRO) need terrestrial testbeds to:

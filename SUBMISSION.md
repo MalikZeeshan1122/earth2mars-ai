@@ -6,7 +6,9 @@
 ### Intelligent Earth Analog Discovery for Moon and Mars Exploration
 *Discovering Earth's Next Frontier Beyond Our Planet*
 
-**Challenge Track:** Planetary Exploration / Moon to Mars Architecture  
+**2026 NASA Space Apps Challenge:** [Permanent-Moon-Base-Locations-and-Mars](https://www.spaceappschallenge.org/2026/challenges/permanent-moon-base-locations-and-mars/)  
+**Challenge Objective:** *Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars*  
+**Participating Space Agencies:** NASA (USA), CSA (Canada), ESA (Europe), JAXA (Japan)  
 **Target Missions:** NASA Artemis Program (Lunar South Pole Base Camp) & NASA Moon to Mars Strategy (Mars 2030+)
 
 </div>
@@ -16,7 +18,7 @@
 ## 🚀 1. High-Impact Elevator Pitch (30 Seconds)
 Before humanity journeys **384,400 km to the Moon** or **225 million km to Mars**, every life-support system, autonomous rover, and spacesuit joint must be battle-tested on Earth. Yet today, planetary analog selection relies on 50-year-old qualitative surveys. 
 
-**Earth2Mars AI** is the world's first open-source, AI-powered planetary analog discovery engine. By synthesizing **NASA satellite imagery (HLS, Landsat 8/9, Sentinel-2)**, **Planetary Data System topography (LRO LOLA, MGS MOLA)**, and **CRISM spectral mineralogy**, our multi-modal neural network and Analytic Hierarchy Process (AHP) objectively identify, rank, and map Earth's closest twins for lunar south pole cold traps, lava tube radiation shelters, and Martian river deltas.
+**Earth2Mars AI** is the world's first open-source, multi-agency AI planetary analog discovery engine. Designed specifically for the **2026 NASA Space Apps Challenge**, our platform unifies **NASA Earthdata, Worldview, PDS, LRO Diviner & LOLA**, **CSA RADARSAT SAR imagery**, **ESA Copernicus Sentinel satellites**, and **JAXA G-Portal climate observations**. Through our multi-modal neural network, Analytic Hierarchy Process (AHP), and Spectral Angle Mapper (SAM), Earth2Mars AI objectively identifies, scores, and maps Earth's closest twins for lunar south pole cold traps, lava tube radiation shelters, and Martian river deltas.
 
 ---
 
@@ -53,16 +55,34 @@ Earth2Mars AI bridges NASA Earth Science and Deep Space Exploration through five
 
 ---
 
-## 🛰️ 4. NASA & Space Agency Datasets Used
-| Dataset / Tool | Space Agency | Application in Earth2Mars AI |
-|:---|:---|:---|
-| **NASA CMR (Common Metadata Repository)** | NASA EarthData | Real-time querying of Harmonized Landsat Sentinel-2 (HLS) granules |
-| **NASA GIBS (Global Imagery Browse Services)** | NASA EOSDIS | True-color and thermal satellite imagery tile layers |
-| **LRO LOLA (Lunar Orbiter Laser Altimeter)** | NASA Goddard / PDS | Digital elevation models and surface roughness of lunar polar craters |
-| **MGS MOLA (Mars Orbiter Laser Altimeter)** | NASA JPL / PDS | Global Martian topographic grids and elevation baselines |
-| **CRISM Spectral Library** | NASA / JHUAPL | Reference absorption spectra for Martian sulfates, hematite, and clays |
-| **LRO Diviner Lunar Radiometer** | NASA / UCLA | Surface kinetic temperature and cold-trap volatile stability bounds |
-| **NASA Moon Trek & Mars Trek** | NASA Solar System Treks | High-resolution interactive 3D orbital GIS embedded in-app |
+## 🛰️ 4. Space Agency Datasets Used
+
+Earth2Mars AI leverages open data and computational tutorials across all four participating space agencies:
+
+### 🇺🇸 NASA (National Aeronautics and Space Administration)
+* **[NASA Earthdata Search](https://search.earthdata.nasa.gov/):** Primary query pipeline for Harmonized Landsat Sentinel-2 (HLS) and MODIS/ASTER surface reflectance products across candidate Earth testbeds.
+* **[NASA Worldview](https://worldview.earthdata.nasa.gov/):** True-color and thermal infrared visualization via GIBS (Global Imagery Browse Services) tile layers.
+* **[NASA Planetary Data System (PDS)](https://pds.nasa.gov/):** Long-term scientific archive for lunar and Martian orbital, lander, and rover observations.
+* **[NASA LRO (Lunar Reconnaissance Orbiter)](https://pds-geosciences.wustl.edu/missions/lro/):** 
+  * **LOLA (Laser Altimeter):** Polar Digital Elevation Models (DEMs), slope gradients, and surface roughness profiles.
+  * **LROC:** Ultra-high resolution imagery for crater morphology and boulder distribution.
+  * **Mini-RF:** Radar scattering and subsurface ice detection calibration.
+* **[NASA LRO Diviner Lunar Data](https://pds-geosciences.wustl.edu/missions/lro/diviner.htm):** Surface kinetic temperature maps ($<40\text{ K}$) and polar cold-trap boundary constraints compared directly with Antarctic Dry Valleys and Svalbard permafrost.
+* **MGS MOLA & Mars CRISM Libraries:** Martian global topography and reference mineral absorption spectra (hematite, jarosite, phyllosilicates).
+
+### 🇨🇦 CSA (Canadian Space Agency)
+* **[RADARSAT Constellation Mission (RCM) Data](https://donnees-data.asc-csa.gc.ca/en/dataset/rcm):** High-resolution Synthetic Aperture Radar (SAR) for scanning Earth day or night, through cloud cover, detecting permafrost ice stability and subsurface bedrock structures.
+* **[RADARSAT-1 Open Data Archive](https://donnees-data.asc-csa.gc.ca/en/dataset/radarsat1):** Historical SAR observations for long-term cryospheric stability modeling.
+* **[CSA Synthetic Aperture Radar (SAR) Python Tutorial](https://github.com/asc-csa/Synthetic_Aperture_Radar_Tutorial):** Implemented SAR pre-processing methodologies for extracting roughness, moisture dielectric constants, and subsurface void detection.
+
+### 🇪🇺 ESA (European Space Agency)
+* **[Copernicus Data Space Ecosystem](https://dataspace.copernicus.eu/):** Free and open Sentinel-2 MSI multispectral optical data and Sentinel-1 SAR imagery for real-time feature extraction.
+* **[ESA Open Science Catalog](https://opensciencedata.esa.int/):** Geoscience workflows, validation datasets, and planetary analog field trial references (Pangaea & Pangaea-X campaigns).
+
+### 🇯🇵 JAXA (Japan Aerospace Exploration Agency)
+* **[JAXA G-Portal](https://gportal.jaxa.jp/gpr/):** Earth-observation geophysical products:
+  * **Global Satellite Mapping of Precipitation (GSMaP):** Hyper-aridity indexing for Mars analog qualification.
+  * **GCOM-C Snow Depth & Vegetation Index (NDVI):** Quantifying vegetation-free, cryogenic conditions matching Moon and Mars polar terrains.
 
 ---
 
