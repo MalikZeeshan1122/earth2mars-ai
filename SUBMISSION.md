@@ -8,6 +8,8 @@
 
 **2026 NASA Space Apps Challenge:** [Permanent-Moon-Base-Locations-and-Mars](https://www.spaceappschallenge.org/2026/challenges/permanent-moon-base-locations-and-mars/)  
 **Challenge Objective:** *Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars*  
+**Team Name:** **AI Squad**  
+**Local Event:** **Islamabad, Pakistan**  
 **Participating Space Agencies:** NASA (USA), CSA (Canada), ESA (Europe), JAXA (Japan)  
 **Target Missions:** NASA Artemis Program (Lunar South Pole Base Camp) & NASA Moon to Mars Strategy (Mars 2030+)
 
@@ -137,9 +139,10 @@ Earth2Mars AI leverages open data and computational tutorials across all four pa
 
 ---
 
-## 👥 8. Author & Acknowledgments
-* **Lead Developer & Planetary AI Architect:** Muhammad Zeeshan
+## 👥 8. Team & Acknowledgments
+* **Team:** **AI Squad** (Islamabad, Pakistan)
+* **Team Owner & Lead Developer:** Muhammad Zeeshan
 * **Open Source License:** MIT License
 * **Repository:** [https://github.com/MalikZeeshan1122/earth2mars-ai](https://github.com/MalikZeeshan1122/earth2mars-ai)
 
-*Developed for the NASA Space Apps Challenge.*
+*Submitted for the 2026 NASA Space Apps Challenge — Islamabad, Pakistan.*
