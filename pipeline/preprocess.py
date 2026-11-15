@@ -6,7 +6,9 @@ of satellite imagery for feature extraction.
 
 import numpy as np
 from typing import Tuple
-from loguru import logger
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def atmospheric_correction(

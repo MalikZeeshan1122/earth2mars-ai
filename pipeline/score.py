@@ -13,7 +13,9 @@ if ROOT_DIR not in sys.path:
 
 from typing import Dict, List
 from dataclasses import asdict
-from loguru import logger
+import logging
+
+logger = logging.getLogger(__name__)
 
 from models.similarity_scorer import (
     AnalogFeatures,

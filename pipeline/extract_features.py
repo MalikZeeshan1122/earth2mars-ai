@@ -14,7 +14,9 @@ if ROOT_DIR not in sys.path:
 import numpy as np
 from dataclasses import asdict
 from typing import Dict
-from loguru import logger
+import logging
+
+logger = logging.getLogger(__name__)
 
 from models.similarity_scorer import AnalogFeatures
 

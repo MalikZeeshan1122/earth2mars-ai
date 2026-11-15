@@ -8,7 +8,9 @@ import os
 import requests
 from dataclasses import dataclass
 from typing import List, Dict, Any, Optional
-from loguru import logger
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass
